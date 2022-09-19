@@ -25,6 +25,9 @@ fi
 # shellcheck disable=SC1091
 source ultimate-bash-api.sh
 
+## Misc Variables ##
+selfname="$(basename "$(readlink -f "${BASH_SOURCE[0]}")")"
+
 # Check that the script is launched with elevated privileges
 if [ "$(id -u)" != "0" ]; then
         fn_echo "[ERROR] This script must be run with elevated privileges"
