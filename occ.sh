@@ -42,7 +42,7 @@ fi
 
 fn_usage(){
         fn_echo "Info! Please, specify an occ command and website"
-        fn_echo "Usage: ./${selfname} \"[occ_command]\" [website]"
+        fn_echo "Usage: ./${selfname} [website] \"[occ_command]\""
 }
 
 # Check user input
@@ -58,8 +58,8 @@ elif [ -n "$3" ]; then
         fn_usage
         exit 1
 else
-        command="${1}"
-        website="${2}"
+        website="${1}"
+        command="${2}"
 fi
 
 # Attempt to locate the occ file
