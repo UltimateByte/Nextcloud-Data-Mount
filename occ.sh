@@ -77,4 +77,4 @@ else
 fi
 
 fn_logecho "Running command: sudo -u ${sysuser} ${php} ${websiteshome}/${website}/${wwwdir}/occ ${command}"
-sudo -u "${sysuser}" "${php}" "${websiteshome}/${website}/${wwwdir}/occ" "${command}"
+sudo -u "${sysuser}" "${php}" "${websiteshome}/${website}/${wwwdir}/occ" ${command}
